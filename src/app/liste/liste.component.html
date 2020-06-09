@@ -1,0 +1,3 @@
+<h1>{{selectedItem}}</h1>
+
+<app-item *ngFor="let pays of tableauPays" [libelle]="pays" (onSelect)="getSelectedItem($event)" ></app-item>
